@@ -1,0 +1,200 @@
+rss {
+	display: block;
+	font-family: verdana, arial;
+}
+
+rss channel item { display: block }		
+
+rss channel item title {
+	display: block;
+	font-family: Helvetica, Geneva, Verdana, Arial, sans-serif; 
+	font-size: 1.3em;
+	font-weight: bold;
+	margin-bottom: 2px;
+	}
+
+rss channel item description {
+	display: block;
+	margin-bottom: 25px;
+	}
+
+rss channel item description * {
+	display: inline;
+	}
+
+rss channel item link { display: none }	
+
+rss channel docs {
+	display: block;
+	background-color: #ffffe6;
+	margin: 20px;
+	text-align: center;
+	padding: 5px;
+	color: #7f7f7f;
+	border: 1px solid silver;
+}
+
+title {
+	display: block;
+	margin: 5px;
+	padding: 2px;
+	color: gray;
+	border-bottom: 1px solid silver;
+}
+
+link {
+	display: block;
+	font-size: small;
+	padding-left: 10px;
+}
+item {
+	display: block;
+	padding: 2px 30px 2px 30px;
+}
+
+docs {
+	display: block;
+	background-color: #ffffe6;
+	margin: 20px;
+	text-align: center;
+	padding: 5px;
+	color: #7f7f7f;
+	border: 1px solid silver;
+}
+/*
+ * RSS 1.0 styles here ... have to do IE styles differently
+ */
+
+RDF {
+	display: block;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 80%;
+	margin: 25px 15px 25px 15px;
+	}
+
+RDF * { display: none }
+
+RDF channel { display: block }
+
+RDF channel * { display: none }		
+	
+RDF channel title {
+	display: block;
+	font-size: 2.0em;
+	font-weight: bold;
+	margin: 5px;
+	padding: 2px;
+	color: gray;
+	border-bottom: 1px solid silver;
+	}
+
+RDF channel link {
+	display: block;
+	margin-bottom: 10px;}
+
+RDF channel description {
+	display: block;
+	margin-bottom: 25px;
+	}
+
+RDF channel docs {
+	display: block;
+	background-color: #ffffe6;
+	margin: 20px;
+	text-align: center;
+	padding: 5px;
+	color: #7f7f7f;
+	border: 1px solid silver;
+}
+RDF item { 
+    display: block
+         }
+
+RDF item title {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 2px;
+	}
+
+RDF item foo {
+	display: block;
+	font-family: Helvetica, Geneva, Verdana, Arial, sans-serif; 
+	font-size: 1.3em;
+	font-weight: bold;
+	margin-bottom: 2px;
+	}
+
+RDF item description {
+	display: block;
+	margin-bottom: 5px;
+	}
+	
+RDF item description * {
+	display: inline
+	}
+
+RDF item link { display: inline}
+
+/* For IE */
+rdf\:RDF {
+	display: block;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 80%;
+	margin: 25px 15px 25px 15px;
+	}
+
+rdf\:RDF * { display: none }
+
+rdf\:RDF channel { display: block }
+
+rdf\:RDF channel * { display: none }		
+	
+rdf\:RDF channel title {
+	display: block;
+	font-size: 2.0em;
+	font-weight: bold;
+	margin-bottom: 5px;
+	}
+
+rdf\:RDF channel link {
+	display: block;
+	margin-bottom: 10px;
+	}
+
+rdf\:RDF channel description {
+	display: block;
+	margin-bottom: 25px;
+	}
+
+rdf\:RDF channel docs {
+	display: block;
+	background-color: #ffffe6;
+	margin: 20px;
+	text-align: center;
+	padding: 5px;
+	color: #7f7f7f;
+	border: 1px solid silver;
+}
+
+rdf\:RDF item { display: block}
+
+rdf\:RDF item title {
+	display: block;
+	font-family: Helvetica, Geneva, Verdana, Arial, sans-serif; 
+	font-size: 1.3em;
+	font-weight: bold;
+	margin-bottom: 2px;
+	}
+
+rdf\:RDF item description {
+	display: block;
+	margin-bottom: 25px;
+	}
+
+rdf\:RDF item description * {
+	display: inline;
+	}
+
+rdf\:RDF item link {
+        display: none
+        }

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns="http://purl.org/rss/1.0/">
+
+  <channel rdf:about="http://www.magahiz.com:8080/frabjous/rss.xml">
+    <title>Frabjous Times</title>
+    <link>http://www.magahiz.com:8080/frabjous/index.html</link>
+    <description>Writing, reviews, and pictures.</description>
+    <language>en-us</language>
+
+  <image rdf:resource="http://xml.com/universal/images/xml_tiny.gif" />
+
+  <items>
+   <rdf:Seq>
+      <rdf:li resource="http://www.magahiz.com:8080/frabjous/%s/%s" />
+   </rdf:Seq>
+  </items>
+  </channel>
+
+<item rdf:about="http://www.magahiz.com:8080/frabjous/%s/%s"><title>%s</title><link>http://www.magahiz.com:8080/frabjous/%s/%s</link><description>%s</description></item>
+
+</rdf:RDF>
+

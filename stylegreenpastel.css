@@ -1,0 +1,97 @@
+<html>
+<style type="text/css">
+body {
+  background-color: #A0C1AC;
+ }
+#content a { 
+          color: #39403B;
+      }
+#content a:active { 
+          background-color: #C1A4A0;
+        }
+#content a:hover { 
+          background-color: #B1BDC1;
+        }
+#navigation a:active { 
+          background-color: #C1A4A0;
+        }
+#navigation a:hover { 
+          background-color: #B1BDC1;
+        }
+#overall {
+  background-color: #A0C1AC;
+}
+h1 {
+    color: #918684;
+    border-color: #A0B8C1;
+    position: absolute;
+}
+h2 {
+    color: #849189;
+}
+#content {
+     background-color: #A0C1AC;
+     color: #39403B;
+}
+#navigation {
+    background-color: #B1C1B7;
+    border-color: #A0B8C1;
+}
+span.c3 {
+    color: #B1C1B7;
+}
+span.c2 {
+    color: #728177;
+}
+div.c1 {
+    color: #39403B;
+}
+div.c2 {
+    color: #918684;
+}
+span.zipel {
+    color: #39403B;
+}
+div.kuhead {
+    color: #39403B;
+}
+div.note {
+    color: #849189; 
+}
+div.form {
+    color: #39403B;
+}
+div.kulast {
+    color: #000; 
+}
+div.keyword {
+  color: #817472;
+}
+span.technoratitag {
+   background-color: #CECBCB;
+}
+.even { color: #444; background: #403A39; }
+.first  { color: #000; background: #A1A6A8; }
+.second { color: #444; background: #E9EDE6; }
+.third  { color: #fff; background: #A8A2A1; }
+tr.posting {
+  background-image: url(yellowdi.gif); 
+  background-repeat:no-repeat;
+  background-position:top;
+} 
+#footer {
+    position: absolute;
+    left: 255px;
+    padding: 6px 3px 10px 19px;
+    margin: 0;
+}
+#revision {
+    position: absolute;
+    left: 255px;
+    padding: 6px 3px 10px 19px;
+    margin: 0;
+}
+</style>
+</html>
+
+

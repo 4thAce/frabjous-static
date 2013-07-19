@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css" href="http://www.magahiz.com/frabjous/rss.css" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns="http://purl.org/rss/1.0/">
+
+  <channel rdf:about="http://www.magahiz.com/frabjous/rss.xml">
+    <title>Writing of Rich Magahiz</title>
+    <link>http://www.magahiz.com/frabjous/writing.html</link>
+    <description>Where you can find some of my writing.</description>
+
+  <image rdf:resource="http://xml.com/universal/images/xml_tiny.gif" />
+
+  <items>
+   <rdf:Seq>
+      <rdf:li resource="http://www.magahiz.com/frabjous/%s" />
+   </rdf:Seq>
+  </items>
+  </channel>
+
+<item rdf:about="http://www.magahiz.com/frabjous/%s"><title>%s</title><link>http://www.magahiz.com/frabjous/%s</link><description>%s<![CDATA[<hr />%s]]></description></item>
+
+</rdf:RDF>
+

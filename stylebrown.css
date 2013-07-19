@@ -1,0 +1,95 @@
+<html>
+<style type="text/css">
+body {
+  background-color: #C48B73;
+ }
+#content a { 
+          color: #41342F;
+      }
+#content a:active { 
+          background-color: #A05E8B;
+        }
+#content a:hover { 
+          background-color: #C4B79C;
+        }
+#navigation a:active { 
+          background-color: #A05E8B;
+        }
+#navigation a:hover { 
+          background-color: #C4B79C;
+        }
+#overall {
+  background-color: #C48B73;
+}
+h1 {
+    color: #785F70;
+    border-color: #C4AA73;
+    position: absolute;
+}
+h2 {
+    color: #937E75;
+}
+#content {
+     background-color: #C48B73;
+     color: #41342F;
+}
+#navigation {
+    background-color: #C4A89C;
+    border-color: #C4AA73;
+}
+span.c3 {
+    color: #C4A89C;
+}
+span.c2 {
+    color: #82695F;
+}
+div.c1 {
+    color: #41342F;
+}
+div.c2 {
+    color: #785F70;
+}
+span.zipel {
+    color: #41342F;
+}
+div.kuhead {
+    color: #41342F;
+}
+div.note {
+    color: #937E75; 
+}
+div.form {
+    color: #41342F;
+}
+div.kulast {
+    color: #000; 
+}
+div.keyword {
+  color: #6A4D61;
+}
+span.technoratitag {
+   background-color: #C4B6B0;
+}
+.even { color: #444; background: #352630; }
+.first  { color: #000; background: #AAA599; }
+.second { color: #444; background: #A0909B; }
+.third  { color: #fff; background: #C4AA73; }
+tr.posting {
+  background-image: url(yellowdi.gif); 
+  background-repeat:no-repeat;
+  background-position:top;
+} 
+#footer {
+    position: absolute;
+    left: 255px;
+    padding: 6px 3px 10px 19px;
+    margin: 0;
+}
+#revision {
+    position: absolute;
+    left: 255px;
+    padding: 6px 3px 10px 19px;
+    margin: 0;
+}
+</style>
+</html>

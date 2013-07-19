@@ -1,0 +1,109 @@
+<html>
+<style type="text/css">
+body {
+  background-color: #C18872;
+ }
+#content a { 
+          color: #40332E;
+      }
+#content a:active { 
+          background-color: #C172AB;
+          color: #FFFFF; 
+        }
+#content a:hover { 
+          background-color: #C1B49A;
+          color: #FFFFF; 
+        }
+#navigation a:visited { 
+           color: #815D77;
+         }
+#navigation a:active { 
+          background-color: #C172AB;
+          color: #FFFFF; 
+        }
+#navigation a:hover { 
+          background-color: #C1B49A;
+          color: #FFFFF; 
+        }
+#overall {
+  background-color: #C18872;
+}
+h1 {
+    background-color: #FFFFFF;
+    color: #C172AB;
+    border-color: #C1A772;
+    position: absolute;
+    background-image: url("/frabjous/tove0.png");
+    background-position: left;
+    width: 305px;
+    height: 227px;
+    padding: 6px 3px 10px 49px;
+}
+h2 {
+    color: #917B73;
+}
+#content {
+     background-color: #C18872;
+     color: #40332E;
+     margin: 275px 0 50px 0;
+}
+#navigation {
+    background-color: #C1A59A;
+    border-color: #815D77;
+}
+span.c3 {
+    color: #C1A59A;
+}
+span.c2 {
+    color: #81675D;
+}
+div.c1 {
+    color: #40332E;
+}
+div.c2 {
+    color: #917388;
+}
+span.zipel {
+    color: #40332E;
+}
+div.kuhead {
+    color: #40332E;
+}
+div.note {
+    color: #917B73; 
+}
+div.form {
+    color: #40332E;
+}
+div.kulast {
+    color: #000; 
+}
+div.keyword {
+  color: #817D77;
+}
+span.technoratitag {
+   background-color: #C1B3B1;
+}
+.even { color: #444; background: #402E3B; }
+.first  { color: #000; background: #C1BBAD; }
+.second { color: #444; background: #C1ADBC; }
+.third  { color: #fff; background: #C1A772; }
+tr.posting {
+  background-image: url(yellowdi.gif); 
+  background-repeat:no-repeat;
+  background-position:top;
+} 
+#footer {
+    position: absolute;
+    left: 255px;
+    padding: 6px 3px 10px 19px;
+    margin: 0;
+}
+#revision {
+    position: absolute;
+    left: 255px;
+    padding: 6px 3px 10px 19px;
+    margin: 0;
+}
+</style>
+</html>

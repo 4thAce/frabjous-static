@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css" href="http://www.magahiz.com/frabjous/rss.css" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns="http://purl.org/rss/1.0/">
+
+  <channel rdf:about="http://www.magahiz.com/frabjous/rss.xml">
+    <title>Frabjous Times</title>
+    <link>http://www.magahiz.com/frabjous/index.html</link>
+    <description>Writing, reviews, and pictures.</description>
+
+  <image rdf:resource="http://xml.com/universal/images/xml_tiny.gif" />
+
+  <items>
+   <rdf:Seq>
+      <rdf:li resource="http://www.magahiz.com/frabjous/b2007/movingover.html" />
+   </rdf:Seq>
+  </items>
+  </channel>
+
+<item rdf:about="http://www.magahiz.com/frabjous/b2007/movingover.html"><title>Moving over</title><link>http://www.magahiz.com/frabjous/b2007/movingover.html</link><description>This blog is moving to frabjoustimes.magahiz.com.<![CDATA[<hr />
+<div class="storybody">I am joining the Web 2.0 world now and relaunching
+this writing blog as <a href="http://frabjoustimes.magahiz.com">http://frabjoustimes.magahiz.com</a>,
+a <a href="http://rubyonrails.org/">Ruby on Rails</a> site using the
+<a href="http://typosphere.org/">Typo</a>
+blogging platform. Although I had a good time tweaking my little
+<a href="http://magahiz.com/fabjous/b2007/publish-1.3">Python-based posting script</a>,
+this will make it easier to control the layout of the pages and to add
+new posts from anywhere.</div>
+<div class="storybody">If your browser supports Javascript, you will be redirected
+to the new site in ten seconds. You will probably want to update your bookmarks
+and feed subscriptions.</div>
+<h3><a href="http://frabjoustimes.magahiz.com">http://frabjoustimes.magahiz.com</a></h3>
+<h3><a href="http://frabjoustimes.magahiz.com/xml/rss20/feed.xml">http://frabjoustimes.magahiz.com/xml/rss20/feed.xml</a></h3>
+]]></description></item>
+
+</rdf:RDF>
+

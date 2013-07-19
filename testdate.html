@@ -1,0 +1,28 @@
+<html><head><title>Countdown</title>
+</head>
+<body>
+<script language="JavaScript" type="text/javascript">
+<!--
+
+function daysUntilExpiry() {
+  var oneMinute = 60*1000
+  var oneHour = oneMinute *60
+  var oneDay = oneHour * 24
+  var today = new Date()
+  var deadline = new Date()
+  deadline.setMonth(5)
+  deadline.setDate(9)
+  if (today.getMonth() == 5 && today.getDate() > 9) {
+     deadline.setFullYear(deadline.getFullYear() + 1)
+  }
+  var diff = deadline.getTime() - today.getTime()
+  diff = Math.floor(diff/oneDay)
+  return diff
+}
+document.write("<h2>Only <i>")
+document.write(daysUntilExpiry())
+document.write("</i> days until the ESX license expires.</h2>") 
+-->
+</script>
+
+</body></html>

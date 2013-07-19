@@ -1,0 +1,10 @@
+<div class="storybody">My Linux machine went into spasms a while
+back, not staying up more than a couple of minutes (just long enough
+to tar up the data files and transfer them over to another disk).
+My suspicion is that the problem was something having to do either
+with the power supply, the motherboard, or the CPU. So now I have
+things transferred over to Windows running Apache, and I think
+more or less working. I also think I have the dynamic DNS client
+from <a href="http://eurocomp.info/3D/">3DWatch</a> set up now.
+With all the hurlyburly, things are going to be unstable for a while
+though. You have been warned.</div>

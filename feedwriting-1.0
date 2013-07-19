@@ -1,0 +1,364 @@
+#!/usr/bin/env python
+
+import os, re, sys, time, stat, string
+import os.path
+import shutil
+
+# Copyright 2003, Russell Nelson http://angry-economist.russnelson.com
+# Modified by Rich Magahiz (C) 2003 http://www.magahiz.com/frabjous
+# Licensed under the Open Software License.
+# http://opensource.org/licenses/osl.html
+# Like the GPL, only it's a contract.
+
+# how to use publish:
+#   create model.html.
+#   create model.rss.
+#   create content files.  Everything that isn't model.html or summary*.html is content.
+#   Put the line
+#     <META KEYWORD="STATICCONTENT">                
+#     into any .html files which should not be processed 
+#   run 'publish' in the directory holding model.html
+	#      it writes INDEX, ARCHIVE and RSSOUT
+#      to the root directory specified as ROOTDIR
+#      and links to the subdirectory specified as SUBDIR
+
+# assumptions about editing:
+#   that the editor writes a foobar.html file
+#   that this script gets run when the editor is satisified
+#   and wishes to publish that file.
+#   that the editor edits the foobar.html file and runs
+#   this script again to publish the change.
+#   that all old content is preserved and linked-to.
+#   that the permalink always points to the newest version.
+
+# assumptions about model.html:
+#   that it has one <!-- INSERTCONTENT --> line, where the content should go.
+#   that later on it has one <!-- INSERTSTAMP --> line, where the date/time stamp 
+#     should go.
+
+# assumptions about model.rss:
+#   that it takes the form of an RDF 1.0 file
+#   that it has an rdf:li resource line which is to be filled in with
+#    directory name and file name
+#   that it has an <item> line which is to be filled in with directory
+#    name, file name, title, directory name, file name, description
+#   each of these substitution lines is a proper format line %s for the
+#    fields which are to be substituted
+
+# assumptions about all .html files:
+#   files whose names begin in "summary-" are skipped.
+#   that they contain META description lines describing the content
+#   that they have a line with <!-- TITLESTART --><!-- TITLEEND --> tags
+#     surrounding the title.
+#   that the content begins after the next blank line following that line.
+#   that their content ends in a line with <!-- ENDCONTENT -->.
+#   that they have a line which begins with 'Last Modified:' and
+#   that the rest of this line is a date/time stamp.
+
+# if anything isn't obvious about these assumptions, look at my files
+#   on http://www.magahiz.com/frabjous/blog
+
+# Version 1.0 - 20030330- first release.
+
+# Version 1.1 - 20030411- moved RSS out into its own file.
+
+# Version 1.2 - 20030501- Modified by Rich Magahiz
+
+# Version 1.3 - 20040615- rewritefile returns a value, also streamline the loop
+
+# Version 1.4 - 20041016- port to Windows
+
+# Version 1.5 - 20041025- Use shutil.copyfile instead of linking
+
+# Version 1.6 - 20041203- ALTINDEX is a second copy of index.html
+
+# Version 1.7 - 20041228- Fix the rss feed.
+
+# Version 1.8 - 20041227- Add del.icio.us links
+
+# Version 1.9 - 20050126- Add technorati tags on the index page
+
+# Version 2.0 - 20050216- Correct revision linking.
+
+# Version 2.1 - 20050326- Correct technorati tags (maybe).
+
+# Version 2.1 - 20050629- The technorati tag still don't work, change format.
+
+# Version 2.2 - 20051118 - Convert to 2006 version
+
+# Globals - customize here
+#  Filenames
+SUMMARY = r'summary-'
+#INDEX = "index.html"
+#ARCHIVE = "archive"
+RSSOUT = "rss-writing.xml"
+#ALTINDEX = "rm.htm"
+#MODEL = "model.html"
+RSS = "writingmodel.rss"
+#  Path where index and archive will be published to
+#ROOTDIR = "."
+#ROOTDIR = r"/cygdrive/c/Program Files/Apache Group/Apache2/htdocs/magahiz/frabjous"
+ROOTDIR = r"/home/magahiz/public_html/frabjous"
+ARCHDIR = r"/home/magahiz/public_html/frabjous/archive"
+#  Path underneath root where the content lives
+#SUBDIR = "b2006"   
+SUBDIR = None
+#  Number of article lines to keep
+LINECOUNTGLOBAL = 275
+#  Number of rss items to publish (minimum)
+RSSCOUNTGLOBAL = 12
+#  Minimum number of rewrites it takes to generate the new index/archive
+MINREWRITES = 0
+INITREWRITES = 0
+REWFAIL = -1
+# Return success
+REWSUCCESS = 0
+# Cutoff to ignore all old timestamps
+CUTOFF = 1132369836
+DELLINK0 = r'<a href="http://del.icio.us/milkfish/'
+DELLINK1 = r'">'
+DELLINK2 = "</a>\n"
+TECHLINK0 = r'<span class="technoratitag"><a href="http://technorati.com/tag/'
+TECHLINK1 = r'" rel="tag">'
+TECHLINK2 = "</a></span>\n"
+FLARE0 = '<div class="feedflare"><script src="http://feeds.feedburner.com/FrabjousTimes?flareitem=http://magahiz.com/frabjous/'
+FLARE1 = '.html" type="text/javascript"></script></div>' + "\n"
+TAGROLL = '<script type="text/javascript" src="http://del.icio.us/feeds/js/tags/milkfish?icon;count=54;size=11-27;color=cc6633-990033;title=folksonomy"></script>'
+
+# Function to process new content files.
+# we have found content with no timestamp in its name - it must be new.
+# Insert a link to the content it updates (fnold).  Preserve the
+# edit time of the file.
+def rewritefile(fn, fnold, mtime, atime):
+    inf = open(fn)
+    outf = open(fn+".new", "w")
+    while 1:
+        inl = inf.readline()
+        if not inl: break
+        # Check whether it is a static file, bail if so
+        if re.search('STATICCONTENT',inl):
+          print "Static content, skipping rewrite of",fn
+          inf.close()
+          outf.close()
+          # inf.remove()
+          return REWFAIL
+        # outf.write(inl)
+        #if re.match("Last modified:", inl):
+        #if re.match('<!-- REVISION -->',inl):
+        if re.search('<!-- REVISION -->',inl):
+            fnfull = ROOTDIR + os.sep + fnold
+            # outf.write('<div class="revision">Previously published: <a href="/frabjous/%s/%s">%s</a></div>\n' % (SUBDIR, fnold, time.ctime(os.stat(fnfull)[stat.ST_MTIME])))
+    inf.close()
+    outf.close()
+    os.rename(fn+".new", fn)
+    print fn,"rewritten."
+    os.utime(fn, (atime, mtime))
+    return REWSUCCESS
+
+# Function to write out the content, index, archive, and rss files.
+def writecontent():
+    currmonth = time.localtime()[1]
+    rewritecount = INITREWRITES
+    RSSCOUNT = RSSCOUNTGLOBAL
+    LINECOUNT = LINECOUNTGLOBAL
+    keydict = {}
+    #  Read the RSS file here and fill the lists rsstop, rssbot, rssend
+    rssmodel = open(ROOTDIR + os.sep + RSS)
+    rssline = None
+    rssitem = None
+    rssswitch = 0
+    rsstop = []
+    rssbot = []
+    rssend = []
+    for rssread in rssmodel.readlines():
+       if re.search(r'<rdf:li resource', rssread):
+              rssline = rssread
+              rssswitch = 1
+              continue
+       if re.search(r'<item ', rssread):
+             rssitem = rssread
+             rssswitch = 2
+             continue
+       if rssswitch == 0:
+          rsstop.append(rssread)
+       elif rssswitch == 1:
+          rssbot.append(rssread)
+       else:
+          rssend.append(rssread)
+    rssmodel.close()
+    #files = os.listdir(ROOTDIR)
+    files = [ROOTDIR + os.sep + "writing.html"]
+    #print files
+    newest = {} # newest not including now
+    oldest = {} # oldest version
+    now = {} # now
+    skippedstories = 0
+
+    for fullfn in files:
+        # print "fullfn =",fullfn
+        fn = os.path.basename(fullfn)
+        fullpath = ROOTDIR + os.sep 
+                   #os.path.dirname(fullfn) + os.sep
+        # ignore certain selected filenames
+        if not re.search(r'\.html$', fn):
+            continue
+        if re.match(r'html~',fn):
+            continue
+        if re.match(SUMMARY, fn):
+            continue
+        # Leave these cases in, in case ROOTDIR = .
+        # remember the newest older versions of this file, 
+        #  based on the timestamp part of the name (mtime).
+        match = re.match(r'(.*)-(\d+)\.html$', fn)
+        if match:
+            fn = match.group(1)+".html"
+            mtime = int(match.group(2))
+            if not newest.has_key(fn) or mtime > newest[fn]: newest[fn] = mtime
+        else:
+            # It's a new content file
+            times = os.stat(ROOTDIR + os.sep + fn)
+            mtime = times[stat.ST_MTIME]
+            atime = times[stat.ST_ATIME]
+            now[fn] = mtime
+            # print "Updating now[",fn,"] to ",mtime
+        # remember the oldest date of this file.
+        if not oldest.has_key(fn) or mtime < oldest[fn]: oldest[fn] = mtime
+
+    # Throw away the initial files list
+    # we sort articles by their initial publication dates, not their current date
+    files = oldest.items()
+    files.sort(lambda a,b:cmp(b[1],a[1]))
+
+    # we only keep enough articles to fill at least LINECOUNT lines.
+
+    for fn,mtime in files:
+        # print "File",fn,"clearing itemcontent"
+        good2write = REWFAIL
+        itemcontent = ""
+        if newest.has_key(fn):
+            pass
+	    # print fn,"mtime",mtime,"now",now[fn],
+            # print "newest",newest[fn],
+            # print
+        else:
+            print fn,"mtime",mtime,"now",now[fn],
+            print
+            rewritecount = rewritecount + 1
+        # is the newest earlier than cutoff? skip if so
+        if newest.has_key(fn) and newest[fn] < CUTOFF:
+            pass
+        else:
+            # is the newest timestamp not ours?
+            if newest.has_key(fn) and newest[fn] != now[fn]:
+                mtime = now[fn]
+                # Rechristen it with a new timestamped name (fnver)
+                fnver = "%s-%d.html" % (fn[:-5], newest[fn])
+                #good2write = rewritefile(ROOTDIR + os.sep + fn, fnver, mtime, mtime)
+                good2write = REWSUCCESS
+            # else:
+            #     print "Newest timestamp for",fn,"is current"
+            # make a link to our timestamped file.
+            # if not newest.has_key(fn) or newest[fn] != now[fn]:
+            #    # This is broken on Windows but works on Unix/Cygwin
+            #    # os.link(fullpath + fn, fullpath + "%s-%d.html" % (fn[:-5], now[fn]))
+            #    # shutil.copyfile(fullpath + fn, fullpath + "%s-%d.html" % (fn[:-5], now[fn]))
+        # Now we get to open up the content file
+        inf = open(fullpath + fn)
+        # Process the META lines first
+        description = "Frabjous Times"
+        keyword = []
+        # get the description and keywords
+        allkeys = []
+        title = None
+        while 1:
+            line = inf.readline()
+            if not line: break
+            descmatch = re.search(r'="[dD]escription" (content|CONTENT)="(.*)"', line)
+            keymatch = re.search(r'="[Kk]ey[Ww]ords" (content|CONTENT)="(.*)"', line)
+            titlematch = re.search(r'<!-- TITLESTART -->(.*)<!-- TITLEEND -->', line)
+            if descmatch:
+                description = descmatch.group(2)
+                continue
+            if keymatch:
+                allkeys = string.split(string.strip(keymatch.group(2)),',')
+                keyword.extend(allkeys)
+                for eachkey in allkeys:
+                  keydict[eachkey] = ''
+                  # print "adding key ",eachkey
+                continue
+            # get the title out of the file.  Title must be on one line inside TITLE{START|END} comment tags
+            if titlematch:
+                title = titlematch.group(1)
+                # print "Title",title
+                break
+        # print good2write
+        # Archive it if it was first created this month
+        # currmonth = 1
+        # print time.localtime(oldest[fn])[1], good2write
+        # if(good2write > REWFAIL) and (time.localtime(oldest[fn])[1] == currmonth):
+        #  Now we need to decide whether to write to the index file
+        # if (LINECOUNT < 0) and (good2write == REWFAIL):
+        if (0):
+            # Nah, it's too full
+            skippedstories = skippedstories + 1
+            # print "Skipping",title,"LINECOUNT",LINECOUNT,"good2write",good2write,"REWFAIL",REWFAIL
+        else:
+            # print "Adding",title
+            # print everything from the title through the TITLESTART line.
+            while 1:
+                LINECOUNT = LINECOUNT - 1
+                line = inf.readline()
+                if not line: break
+                # Avoid nesting the tables
+                if re.search(r'<table class="onepost"',line):
+                    continue
+                if re.search(r'<!-- ENDCONTENT -->', line):
+                    # print "Wrote content of ",title
+                    break
+                # indexf.write(line)
+                itemcontent += line
+            # Add the comment link line
+            basefilename = string.split(fn,'.')[0]
+            comm0 = r'<div class="comment"><a href="javascript:HaloScan('
+            comm1 = r');" target="_self"><script type="text/javascript">postCount('
+            comm2 = r');</script></a> | <a href="javascript:HaloScanTB('
+            comm3 = r');" target="_self"><script type="text/javascript">postCountTB('
+            comm4 = r'); </script></a></div><br>' + "\n"
+        inf.close()
+        # Write the lists out to the rss file
+        # Write up to RSSCOUNT items to the rss file
+        # print "RSSCOUNT=",RSSCOUNT
+        if (RSSCOUNT > 0) or (good2write>REWFAIL):
+            #rss.write(rssline % (title, SUBDIR, fn)) # 0.9 format
+            # print "rssline=",rssline
+            # print "SUBDIR, fn, title, SUBDIR, fn, description, itemcontent",SUBDIR, fn, title, SUBDIR, fn, description, itemcontent
+            rssbot.append(rssitem % (fn, title, fn, description, itemcontent))
+            # print "<rssitem,SUBDIR,fn>",rssitem,SUBDIR,fn
+            rsstop.append(rssline % fn)
+            RSSCOUNT = RSSCOUNT - 1
+    for topline in rsstop:
+       rss.write(topline)
+    for botline in rssbot:
+       rss.write(botline)
+    for endline in rssend:
+       rss.write(endline)
+    rss.close()
+    return rewritecount
+
+# Main program
+# we rewrite the index file and the archive file modelled on what
+# we find in MODEL
+# If all the files live in one directory, uncomment the following
+rss  = open(ROOTDIR + os.sep + "rss.new", "w")
+modtime = time.ctime(time.time())
+dtag = {}
+
+
+rewritecount = writecontent()
+
+# we do nothing permanent until everything has succeeded.
+print "rewritecount",rewritecount
+if (rewritecount > MINREWRITES):
+    print "commit changes"
+    os.rename(ROOTDIR + os.sep + 'rss.new',ROOTDIR + os.sep +  RSSOUT)
+    # os.unlink(ROOTDIR + os.sep + 'rss.new')

@@ -1,0 +1,183 @@
+body {
+  background-color: #C18872; 
+ }
+#content a { 
+          color: #40332E;
+      }
+#content a:active { 
+          background-color: #C172AB;
+          color: #FFFFFF; 
+        }
+#content a:hover { 
+          background-color: #C1B49A;
+          color: #FFFFFF; 
+        }
+#navigation a:visited { 
+           color: #815D77;
+         }
+#navigation a:active { 
+          background-color: #C172AB;
+          color: #FFFFFF; 
+        }
+#navigation a:hover { 
+          background-color: #C1B49A;
+          color: #FFFFFF; 
+        }
+#overall {
+  background-color: #C18872; 
+  background-image: url("/frabjous/toss.jpg"); 
+/*  background-color: #000; */
+}
+#uber {
+  background-color: #C18872; 
+/*  background-color: #000; */
+}
+h1 {
+    background-color: #C1A59A;
+    color: #C172AB;
+    border-color: #C1A59A;
+    border: 0.2em solid;
+    position: absolute;
+    background-image: url("/frabjous/tove1.png");
+    background-position: left;
+    width: 305px;
+    height: 227px;
+    padding: 0 0 0 0;
+}
+h1 a {
+  text-decoration: none;
+}
+h2 {
+    color: #917B73;
+}
+#footer {
+    background: url("/frabjous/toss.jpg"); 
+}
+#footer .email {
+    background-image: url("/frabjous/toss.jpg"); 
+}
+.revision {
+    background: url("/frabjous/toss.jpg"); 
+}
+#content {
+     background-color: #C18872;
+     color: #40332E;
+     margin: 275px 0 50px 0;
+  background-image: url("/frabjous/toss.jpg"); 
+}
+#navigation {
+    background-color: #C1A59A;
+    border-color: #815D77;
+}
+span.c3 {
+    color: #C1A59A;
+}
+span.c2 {
+    color: #81675D;
+}
+div.c1 {
+    color: #40332E;
+}
+div.c2 {
+    color: #917388;
+}
+span.zipel {
+    color: #40332E;
+}
+div.kuhead {
+    color: #40332E;
+}
+div.note {
+    color: #917B73; 
+    background-image: url("/frabjous/line.gray.dither.gif");
+    /* background-position: top; */
+    background-repeat: no-repeat;
+    border: none;
+    margin: 2em 0 0 0;
+}
+div.form {
+    color: #40332E;
+}
+div.kulast {
+    color: #000; 
+}
+div.keyword {
+  color: #817D77;
+}
+span.technoratitag {
+   background-color: #C1B3B1;
+}
+.even { color: #444; background: #402E3B; }
+.first  { color: #000; background: #C1BBAD; }
+.second { color: #444; background: #C1ADBC; }
+.third  { color: #fff; background: #C1A772; }
+tr.posting {
+  background-image: url("/frabjous/tossbar.jpg"); 
+  background-repeat:no-repeat;
+  background-position:top;
+}
+tr.posting td {
+  padding: 1em 0em 0 0;
+} 
+#footer {
+    position: absolute;
+    left: 255px;
+    padding: 6px 3px 10px 19px; 
+    margin: 0; 
+    background-color: #C18872;
+    background-image: url("/frabjous/toss.jpg"); 
+}
+.timestamp {
+    background: #C1ADBC;
+}
+.revision {
+/*    position: absolute;
+    left: 255px; */
+    padding: 6em 3em 10em 19em; 
+/*    margin: 0;  */
+    background-color: #C18872; 
+  background-image: url("/frabjous/toss.jpg"); 
+}
+div.split {
+  position: relative;
+  width: 85%;
+  left: 10%;
+}
+ span.lefthalf {
+   left: 5%;
+}
+
+.cinqfirst {
+  color: #000; 
+  text-align: center; 
+  font-size: 128%;
+}
+.cinqmid {
+  color: #000; 
+  text-align: center; 
+  font-size: 128%;
+}
+.cinqlast {
+  color: #000;
+  text-align: center;
+  font-size: 128%;
+}
+#ItsConsideredADelicacy227008 ul {
+  margin-left: 0em;
+  padding-left: 0em;
+  list-style: none;
+}
+#ItsConsideredADelicacy227008 ul li{
+  padding: 0.5em 0 0 0;
+  margin: 0.5em 0 0 -0.5em;
+}
+#HeavyHeavyWater447691 ul {
+  margin-left: 0em;
+  padding-left: 0em;
+  list-style: none;
+}
+#HeavyHeavyWater447691 ul li{
+  padding: 0.5em 0 0 0;
+  margin: 0.5em 0 0 -0.5em;
+}
+

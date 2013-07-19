@@ -1,0 +1,185 @@
+html {
+  width: 97%;
+}
+body {
+  margin: 0;
+  font-family: Georgia, Times, serif;
+  background-color: #ffffff;
+  color: #666;
+ }
+#content a { color: #bed;
+        text-decoration: none; 
+      }
+#content a:visited { color: #000;
+           text-decoration: none; 
+         }
+#content a:active { background-color: #666;
+          color: #cc6;
+        }
+#content a:hover { background-color: #666;
+          color: #cc6; 
+        }
+#navigation a { color: #666;
+        text-decoration: none; 
+      }
+#navigation a:visited { color: #9bb;
+           text-decoration: none; 
+         }
+#navigation a:active { background-color: #666;
+          color: #bed; 
+        }
+#navigation a:hover { background-color: #666;
+          color: #cc6; 
+        }
+p, td {
+  font-family: Georgia, Times, serif;
+}
+#overall {
+  margin: 0;
+  background-color: #9bb;
+}
+#pagenav {
+   display: none;
+  }
+a img,:link img,:visited img { 
+   border:none 
+  }
+h1 {
+    z-index: 5;
+    position: absolute;
+    top: 10px;
+    left: 255px;
+    font-size: 200%;
+    color: #9bb;
+    font-family: Georgia, serif;
+    font-style: normal;
+    font-variant: normal;
+    padding: 6px 3px 10px 19px;
+    margin: 0;
+    border-color: #cc6;
+    border: 0.1em dotted #cc6;
+    background-color: #000;
+    text-align: left;
+    background-repeat: no-repeat;
+}
+h2 {
+    padding: .5em .5em .5em 1em;
+    color: #fff;
+}
+h3 {
+    padding: .5em .5em .5em 1em;
+    color: #9bb;
+}
+#footer {
+    position: relative;
+    z-index: 7;
+    margin: 0 0 1em 0;
+    padding: 10px 0 30px 0;
+    text-indent: 5em;
+    background-repeat: no-repeat;
+}
+.timestamp {
+    font-family: Georgia, Times, serif;
+    float: left;
+    text-align: left;
+    font-size: .7em;
+    padding: 1em 10em 1em 10em;
+}
+.comment {
+    font-family: Georgia, Times, serif;
+    float: left;
+    text-align: left;
+    font-size: 1em;
+    padding: 0em 10em .5em 10em;
+}
+
+.revision {
+    font-family: Georgia, Times, serif;
+    float: right;
+    text-align: right;
+    font-size: .7em;
+    padding: 1em 10em 1em 5em;
+}
+#footer .email {
+    float: right;
+    text-align: right;
+}
+#content {
+     margin: 100px 0 50px 0;
+     padding: 0 9% 150px 200px;
+     background-color: #9bb;
+     color: #666;
+     border-color: rgb(0,0,0);
+     border-left-width: 0px; border-right-width: 0px; border-top-width: 0px; border-bottom-width: 0px;
+     border-left-style: none; border-right-style: none; border-top-style: none; border-bottom-style: none;
+     font-family: Georgia, Times, serif;
+     font-size: 1em;
+}
+#navigation {
+    position: absolute;
+    z-index: 5;
+    width: 10em;
+    top: 40px;
+    left: 0;
+    margin: 0;
+    padding: 25px 30px 120px 10px;
+    font-family: Georgia, serif;
+    font-size: .7em;
+    background-color: #bed;
+    color: #000;
+    border: 0.2em solid;
+    border-color: #666;
+}
+
+span.c3 {color: #9bb}
+span.c2 {color: #666; font-size: 64%}
+div.c1 {color: #000; font-size: 144%; text-align: center}
+div.c2 {color: #9bb; font-size: 72%}
+div.c3 {color: #fff; text-align: center}
+
+span.zipel {color: #333333; font-size: 128%}
+div.kuhead {color: #333333; font-size: 144%; text-align: center}
+div.note {
+    color: #666; 
+    font-size: 80%; 
+    border-top: thick dotted #cc6; width: 75%;
+    width: 75%;
+    padding: 0.5em 0 0 0
+}
+div.form {color: #666; font-size: 80%; text-align: center; padding: 0 0 3em 0;}
+div.kubody {color: #000; text-align: center; font-size: 128%}
+div.kufirst {color: #000; text-align: center; font-size: 128%}
+div.kumid {color: #000; text-align: center; font-size: 128%}
+div.kulast {
+    color: #333333; 
+    text-align: center; 
+    font-size: 128%;
+    margin: 0 0 1em 0
+}
+div.keyword {color: #666; font-size:75%; width: 85%}
+div.storybody {
+    color: #000; text-align: left; 
+    margin: 0 0 1em 0;
+}
+div.brickfirst {color: #000; text-align: center; font-size: 128%}
+div.brickmid {color: #000; text-align: center; font-size: 128%}
+div.bricklast {color: #000; text-align: center; font-size: 128%}
+div.limtop {color: #000; text-indent: 3em; font-size: 128%}
+div.lim34 {color: #000; text-indent: 6em; font-size: 128%}
+div.limbot {color: #000; text-indent: 3em; margin: 0 0 1em 0; font-size: 128%}
+div.split {
+   position: relative;
+   top: 0em;
+   right: 5em;
+   margin: 0 0 4em 0;
+}
+span.lefthalf {position: relative;
+   color: #000; float: left; font-size: 128%}
+span.righthalf {position: relative;
+   color: #000; float: right; font-size: 128%;
+   margin: 0 0 1em 0
+   }
+span.technoratitag { color: #000;
+   background-color: #fff;
+   text-decoration: none;
+}

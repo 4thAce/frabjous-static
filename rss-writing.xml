@@ -1,0 +1,666 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css" href="http://www.magahiz.com/frabjous/rss.css" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns="http://purl.org/rss/1.0/">
+
+  <channel rdf:about="http://www.magahiz.com/frabjous/rss.xml">
+    <title>Writing of Rich Magahiz</title>
+    <link>http://www.magahiz.com/frabjous/writing.html</link>
+    <description>Where you can find some of my writing.</description>
+
+  <image rdf:resource="http://xml.com/universal/images/xml_tiny.gif" />
+
+  <items>
+   <rdf:Seq>
+      <rdf:li resource="http://www.magahiz.com/frabjous/writing.html" />
+   </rdf:Seq>
+  </items>
+  </channel>
+
+<item rdf:about="http://www.magahiz.com/frabjous/writing.html"><title>Writing</title><link>http://www.magahiz.com/frabjous/writing.html</link><description>A list of my original writing published in print and on the Web.<![CDATA[<hr />			<div class="storybody">I write short poetry:
+			<ul>
+<li><a href="http://del.icio.us/milkfish/brick">brick</a></li>
+<li><a href="http://del.icio.us/milkfish/cinquain">cinquain</a></li>
+<li><a href="http://del.icio.us/milkfish/Fibonacci">fibonacci</a></li>
+<li><a href="http://del.icio.us/milkfish/ghazal">ghazal</a></li>
+<li><a href="http://del.icio.us/milkfish/haiku">haiku</a></li>
+<li><a href="http://del.icio.us/milkfish/hay(na)ku">hay(na)ku</a></li>
+<li><a href="http://del.icio.us/milkfish/limerick">limerick</a></li>
+<li><a href="http://del.icio.us/milkfish/lucan-no-haiku">lucan-no-haiku</a></li>
+<li><a href="http://del.icio.us/milkfish/renga">renga</a></li>
+<li><a href="http://del.icio.us/milkfish/scifaiku">scifaiku</a></li>
+<li><a href="http://del.icio.us/milkfish/senryu">senryu</a></li>
+<li><a href="http://del.icio.us/milkfish/stellarenga">stellarenga</a></li>
+<li><a href="http://del.icio.us/milkfish/tanka">tanka</a></li>
+<li><a href="http://del.icio.us/milkfish/triolet">triolet</a></li>
+<li><a href="http://del.icio.us/milkfish/zip">zip</a></li>
+				</ul>
+			and short fiction:
+			<ul>
+<li> <a href="http://del.icio.us/milkfish/55fiction">55-word story</a></li>
+<li><a href="http://del.icio.us/milkfish/ShortStory">short story</a></li>
+<li><a href="http://del.icio.us/milkfish/wriashorstorwe">WriaShorStorWe</a></li>
+			</ul>
+			</div>
+
+			<div class="storybody">Published work:
+<table summary="List of writing which has been published" border="2">
+<!-- <table x:str border=0 cellpadding=0 cellspacing=0 width=784 style='border-collapse:
+ collapse;table-layout:fixed;width:590pt'>
+ <col class=xl25 width=151 style='mso-width-source:userset;mso-width-alt:5522;
+ width:113pt'>
+ <col class=xl25 width=182 style='mso-width-source:userset;mso-width-alt:6656;
+ width:137pt'>
+ <col width=121 style='mso-width-source:userset;mso-width-alt:4425;width:91pt'>
+ <col class=xl24 width=110 span=3 style='mso-width-source:userset;mso-width-alt: 4022;width:83pt'>
+ -->
+  <tr height=17 style='height:12.75pt'>
+	
+  <td height=17 class=xl32 width=151 bgcolor="#c0c0c0" style='height:12.75pt;width:113pt'><b>Title</b></td>
+  <td height=17 class=xl32 width=151 bgcolor="#c0c0c0" style='height:12.75pt;width:113pt'><b>Publication</b></td>
+  <td height=17 class=xl32 width=151 bgcolor="#c0c0c0" style='height:12.75pt;width:113pt'><b>Issue online</b></td>
+  <td bgcolor="#c0c0c0"><b>Notes</b></td>
+ </tr>
+<!-- Top of table -->
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl25 width=151 style='height:15.0pt;width:113pt'>
+   <a href="http://magahiz.com/frabjous/b2006/yourcolorpalette.html">Your color palette</a></td>
+  <td><a href="http://www.genremall.com/zinesr.htm#aoife">Aoife's kiss</a></td>
+  <td class=xl31 align=right>
+	September 2007 print edition</td>
+  <td></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl25 width=151 style='height:15.0pt;width:113pt'>
+<a href="http://magahiz.com/frabjous/b2005/x23.html">Looking up</a></td>
+  <td><a href="http://www.dreamsandnightmares.interstellardustmites.com/">Dreams and Nightmares</a></td>
+  <td class=xl31 align=right>
+	Issue #76</td>
+  <td></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl25 width=151 style='height:15.0pt;width:113pt'>
+<a href="http://magahiz.com/frabjous/b2005/r200702_1.html">NE corridor</a></td>
+  <td><a href="http://www.genremall.com/zinesr.htm#scifaikuest">Scifaikuest</a></td>
+  <td class=xl31 align=right>
+	May 2007</td>
+  <td></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl25 width=151 style='height:15.0pt;width:113pt'>
+   <a href="http://magahiz.com/frabjous/b2006/yourxanadu.html">Your Xanadu</a></td>
+  <td><a href="http://www.dreamsandnightmares.interstellardustmites.com/">Dreams and Nightmares</a></td>
+  <td class=xl31 align=right>
+	Issue #77</td>
+  <td></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl25 width=151 style='height:15.0pt;width:113pt'>
+   <a href="http://magahiz.com/frabjous/b2007/railroadout.html">Railroad out of bondage</a></td>
+  <td><a href="http://www.amaze-cinquain.com/WINTER-07/">Amaze</a></td>
+  <td class=xl31 align=right>
+	<a href="http://www.amaze-cinquain.com/WINTER-07/magahiz.html">Issue #11</a></td>
+  <td></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl25 width=151 style='height:15.0pt;width:113pt'>
+   <a href="http://magahiz.com/frabjous/b2007/toomanypoems.html">On too many poems</a></td>
+  <td><a href="http://www.amaze-cinquain.com/WINTER-07/">Amaze</a></td>
+  <td class=xl31 align=right>
+	<a href="http://www.amaze-cinquain.com/WINTER-07/magahiz.html">Issue #11</a></td>
+  <td></td>
+ </tr>
+
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl25 width=151 style='height:15.0pt;width:113pt'>
+   <a href="http://magahiz.com/frabjous/b2005/beyondtheveil.html">Beyond the veil</a></td>
+  <td><a href="http://samsdotpublishing.com/scifaikuest/cover.htm">Scifaikuest</a></td>
+  <td class=xl31 align=right>
+	<a href="http://www.genremall.com/zinesr.htm#scifaikuest">February 2007 print edition</a></td>
+  <td></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl25 width=151 style='height:15.0pt;width:113pt'>
+   <a href="http://magahiz.com/frabjous/b2006/endofwar0.html">The End of war</a></td>
+  <td><a href="http://poetrywriting.org/Sketchbook2-1Jan07/Jan07SKB_0enter.htm">Sketchbook</a></td>
+  <td class=xl31 align=right>
+	<a href="http://poetrywriting.org/Sketchbook2-1Jan07/Jan07SKB_Rich_Magahiz.htm">January 2007</a></td>
+  <td></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl25 width=151 style='height:15.0pt;width:113pt'>
+   <a href="http://magahiz.com/frabjous/b2006/x061002_13.html">Common cause</a></td>
+  <td><a href="http://www.theswordreview.com/contents.php">The Sword Review</a></td>
+  <td class=xl31 align=right>
+<a href="http://www.theswordreview.com/item.php?sub_id=783">Common cause</a></td>
+  <td></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl25 width=151 style='height:15.0pt;width:113pt'>
+   <a href="http://magahiz.com/frabjous/b2005/transcendental.html">Transcendental</a></td>
+  <td><a href="http://www.geocities.com/theshantytownanomaly/index.htm">The Shantytown Anomaly</a></td>
+  <td class=xl31 align=right>
+	<!-- -->Issue #4<!-- --></td>
+  <td></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl25 width=151 style='height:15.0pt;width:113pt'>
+   <a href="http://magahiz.com/frabjous/b2005/1812.html">1812</a></td>
+  <td><a href="http://www.geocities.com/theshantytownanomaly/index.htm">The Shantytown Anomaly</a></td>
+  <td class=xl31 align=right>
+	<!-- -->Issue #4<!-- --></td>
+  <td></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl25 width=151 style='height:15.0pt;width:113pt'>
+   <a href="http://magahiz.com/frabjous/b2006/flash.html">Flash frozen</a></td>
+  <td><a href="http://www.theswordreview.com/contents.php">The Sword Review</a></td>
+  <td class=xl31 align=right>
+	<a href="http://www.theswordreview.com/item.php?sub_id=773">Flash frozen</a></td>
+  <td></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl25 width=151 style='height:15.0pt;width:113pt'>
+   <a href="http://magahiz.com/frabjous/b2006/peakperformance.html">Peak performance</a></td>
+  <td><a href="http://poetrywriting.org/Sketchbook1-3Dec06/Dec06SB_0enter.htm">Sketchbook</a></td>
+  <td class=xl31 align=right>
+	<a href="http://poetrywriting.org/Sketchbook1-3Dec06/Dec06SKB_Rich_Magahiz.htm">December 2006</a></td>
+  <td></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl25 width=151 style='height:15.0pt;width:113pt'>
+   <a href="http://magahiz.com/frabjous/blog/mastectomy.html">Mastectomy</a></td>
+  <td><a href="http://members.aol.com/acinquain/FALL-06/index.htm">Amaze</a></td>
+  <td class=xl31 align=right>
+	<a href="http://members.aol.com/acinquain/FALL-06/magahiz.html">Vol. 4, No 4</a></td>
+  <td></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl25 width=151 style='height:15.0pt;width:113pt'>
+   <a href="http://magahiz.com/frabjous/blog/c181102_0.html">Weather report</a></td>
+  <td><a href="http://members.aol.com/acinquain/FALL-06/index.htm">Amaze</a></td>
+  <td class=xl31 align=right>
+	<a href="http://members.aol.com/acinquain/FALL-06/magahiz.html">Vol. 4, No 4</a></td>
+  <td></td>
+ </tr>
+
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl25 width=151 style='height:15.0pt;width:113pt'>
+   The tender spots</td>
+  <td><a href="http://www.ahapoetry.com/ahalynx/213HMPG.html">Lynx</a></td>
+  <td class=xl31 align=right>
+	<a href="http://www.ahapoetry.com/ahalynx/213solo.html">XXI:3</a></td>
+  <td></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl25 width=151 style='height:15.0pt;width:113pt'>
+   mind-body mashup</td>
+  <td><a href="http://www.ahapoetry.com/ahalynx/213HMPG.html">Lynx</a></td>
+  <td class=xl31 align=right>
+	<a href="http://www.ahapoetry.com/ahalynx/213sym.html">XXI:3</a></td>
+  <td>With John W. Sexton</td>
+ </tr>
+
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl25 width=151 style='height:15.0pt;width:113pt'>
+   Far from the footlights</td>
+  <td><a href="http://www.amaze-cinquain.com/">Amaze</a></td>
+  <td class=xl31 align=right>
+	<a href="http://members.aol.com/acinquain/SUMMER-06/magahiz.html">Volume 4 number 3</a></td>
+  <td></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl25 width=151 style='height:15.0pt;width:113pt'>
+   Final meals</td>
+  <td><a href="http://triptychhaiku.blogspot.com">Triptych Haiku</a></td>
+  <td class=xl31 align=right>
+	<a href="http://triptychhaiku.blogspot.com/2006/09/14.html">Volume 1 number 2</a></td>
+  <td></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl25 width=151 style='height:15.0pt;width:113pt'>
+   <a href="http://magahiz.com/frabjous/blog/h_sweetness.html">Having all sweetness</a></td>
+  <td><a href="http://triptychhaiku.blogspot.com">Triptych Haiku</a></td>
+  <td class=xl31 align=right>
+	<a href="http://triptychhaiku.blogspot.com/2006/09/14.html">Volume 1 number 2</a></td>
+  <td></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl25 width=151 style='height:15.0pt;width:113pt'>
+   <a href="http://magahiz.com/frabjous/blog/heartshaped.html">Purple heart-shaped</a></td>
+  <td><a href="http://triptychhaiku.blogspot.com">Triptych Haiku</a></td>
+  <td class=xl31 align=right>
+	<a href="http://triptychhaiku.blogspot.com/2006/09/14.html">Volume 1 number 2</a></td>
+  <td></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl25 width=151 style='height:15.0pt;width:113pt'>
+   <a href="http://magahiz.com/frabjous/b2005/theireyes.html">It was their eyes</a></td>
+  <td><a href="http://triptychhaiku.blogspot.com">Triptych Haiku</a></td>
+  <td class=xl31 align=right>
+	<a href="http://triptychhaiku.blogspot.com/2006/09/14.html">Volume 1 number 2</a></td>
+  <td></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl25 width=151 style='height:15.0pt;width:113pt'>
+   <a href="http://magahiz.com/frabjous/b2006/dividedbyzero.html">Divided by zero</a></td>
+  <td><a href="http://triptychhaiku.blogspot.com">Triptych Haiku</a></td>
+  <td class=xl31 align=right>
+	<a href="http://triptychhaiku.blogspot.com/2006/09/14.html">Volume 1 number 2</a></td>
+  <td></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl25 width=151 style='height:15.0pt;width:113pt'>
+   <a href="http://magahiz.com/frabjous/b2006/noaccommodation.html">No accommodation</a></td>
+  <td><a href="http://www.sondra.net/al/default.htm">Autumn Leaves</a></td>
+  <td class=xl31 align=right>
+	<a href="http://www.sondra.net/al/vol10/105NoAccommodation.htm">Volume 10 number 5</a></td>
+  <td></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl25 width=151 style='height:15.0pt;width:113pt'>
+   <a href="http://magahiz.com/frabjous/b2006/makedo.html">Make do</a></td>
+  <td><a href="http://www.moonlit-path.com">Tales from the Moonlit Path</a></td>
+  <td class=xl31 align=right>
+	<a href="http://www.moonlit-path.com/poetry/magahiz-8-14-06.htm">Issue #4</a></td>
+  <td></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl25 width=151 style='height:15.0pt;width:113pt'>
+   <a href="http://magahiz.com/frabjous/b2005/x120705_5.html">Suns dazzled</a></td>
+  <td><a href="http://www.moonlit-path.com">Tales from the Moonlit Path</a></td>
+  <td class=xl31 align=right>
+	<a href="http://www.moonlit-path.com/poetry/magahiz-8-14-06.htm">Issue #4</a></td>
+  <td></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl25 width=151 style='height:15.0pt;width:113pt'>
+   <a href="http://magahiz.com/frabjous/b2006/heatsink.html">Heatsink</a></td>
+  <td><a href="http://www.moonlit-path.com">Tales from the Moonlit Path</a></td>
+  <td class=xl31 align=right>
+	<a href="http://www.moonlit-path.com/poetry/magahiz-8-14-06.htm">Issue #4</a></td>
+  <td></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl25 width=151 style='height:15.0pt;width:113pt'>(Untitled)</td>
+  <td><a href="http://du5tin.net/haiku/haiku.html">clouds peak</a></td>
+  <td class=xl31 align=right>
+	<a href="http://du5tin.net/haiku/magahiz.html">Issue #1</a></td>
+  <td></td>
+ </tr>
+ <tr height=20 style='height:15.0pt'>
+  <td height=20 class=xl25 width=151 style='height:15.0pt;width:113pt'>(Untitled)</td>
+  <td><a href="http://du5tin.net/haiku/haiku.html">clouds peak</a></td>
+  <td class=xl31 align=right>
+	<a href="http://du5tin.net/haiku/magahiz.html">Issue #1</a></td>
+  <td></td>
+ </tr>
+ <tr height=17>
+  <td height=17 class=xl25 width=151 style='height:12.75pt;width:113pt'>(Untitled)</td>
+  <td><a href="http://du5tin.net/haiku/haiku.html">clouds peak</a></td>
+  <td class=xl31 align=right>
+	<a href="http://du5tin.net/haiku/magahiz.html">Issue #1</a></td>
+  <td></td>
+ </tr>
+ <tr height=17>
+  <td height=17 class=xl25 width=151 style='height:12.75pt;width:113pt'>(Untitled)</td>
+  <td><a href="http://du5tin.net/haiku/haiku.html">clouds peak</a></td>
+  <td class=xl31 align=right>
+	<a href="http://du5tin.net/haiku/magahiz.html">Issue #1</a></td>
+  <td></td>
+ </tr>
+ <tr height=34 style='height:25.5pt'>
+  <td height=34 class=xl32 width=151 style='height:25.5pt;width:113pt'>
+	<a href="http://magahiz.com/frabjous/b2006/capella5.html">Capella 5 needs your children</a></td>
+  <td><a href="http://www.abyssandapex.com/index.html">Abyss &amp; Apex</a></td>
+  <td class=xl31 align=right>
+	<a href="http://www.abyssandapex.com/200604-Capella.html">Issue 18</a></td>
+  <td></td>
+ </tr>
+ </tr>
+ <tr height=17>
+  <td height=17 class=xl32 width=151 style='height:12.75pt;width:113pt'>
+	<a href="http://magahiz.com/frabjous/b2006/capella5.html">The curse of beauty</a></td>
+  <td><a href="http://www.abyssandapex.com/index.html">Abyss &amp; Apex</a></td>
+  <td class=xl31 align=right>
+	<a href="http://www.abyssandapex.com/200601-curse.html">Issue 17</a></td>
+  <td></td>
+ </tr>
+ <tr height=17>
+  <td height=17 class=xl32 width=151 style='height:12.75pt;width:113pt'>
+	<a href="http://magahiz.com/frabjous/blog/venetian.html">Venetian blind</a></td>
+  <td><a href="http://www.worldhaikureview.org/">World Haiku Review</a></td>
+  <td class=xl31 align=right>
+	<a href="http://www.worldhaikureview.org/4-1/whcpoetrybridge-files/04k.htm">WHCPoetrybridge</a></td>
+  <td></td>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl32 width=151 style='height:12.75pt;width:113pt'>
+	<a href="http://magahiz.com/frabjous/b2005/southsea.html">South Sea</a></td>
+  <td><a href="http://www.sondra.net/al/default.htm">Autumn Leaves</a></td>
+  <td class=xl31 align=right>
+	<a href="http://www.sondra.net/al/vol9/92SouthSea.htm">Volume 9 Number 2 (March 2005)</a></td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl32 width=151 style='height:12.75pt;width:113pt'>
+	<a href="http://magahiz.com/frabjous/blog/newbill.html">The new bill</a></td>
+  <td><a href="http://www.sondra.net/al/default.htm">Autumn Leaves</a></td>
+  <td class=xl31 align=right>
+	<a href="http://www.sondra.net/al/vol8/85NewBill.htm">Volume 8 Number 5 (September 2004)</a></td>
+  <td></td>
+ </tr>
+ <tr class=xl33 height=17 style='height:12.75pt'>
+  <td height=17 class=xl32 width=151 style='height:12.75pt;width:113pt'>
+	<a href="http://magahiz.com/frabjous/blog/remnant.html">Among the Remnant</a></td>
+  <td class=xl33><a href="http://members.aol.com/acinquain/front.html">Amaze</a></td>
+  <td class=xl35 align=right>
+	<a href="http://members.aol.com/acinquain/vol_3_no_2/magahiz.html"><span
+  style='font-family:Arial, sans-serif'>Volume 3, No. 2</span></a></td>
+  <td></td>
+ </tr>
+ <tr class=xl33 height=17 style='height:12.75pt'>
+  <td height=17 class=xl32 width=151 style='height:12.75pt;width:113pt'><em>untitled</em></td>
+  <td><a href="http://tinywords.com/">tinywords</a></td>
+  <td class=xl31 align=right><a href="http://tinywords.com/haiku/2004/12/03/">12/3/2004</a></td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl25 width=151 style='height:12.75pt;width:113pt'><em>untitled</em></td>
+  <td><a href="http://tinywords.com/">tinywords</a></td>
+  <td class=xl31 align=right>
+	<a href="http://tinywords.com/haiku/2004/05/11/">5/11/2004</a></td>
+  <td></td>
+ </tr>
+ <tr class=xl33 height=17 style='height:12.75pt'>
+  <td height=17 class=xl32 width=151 style='height:12.75pt;width:113pt'>
+	<a href="http://magahiz.com/frabjous/blog/autumn0.html">In an autumn field</a></td>
+  <td class=xl33><a href="http://members.aol.com/acinquain/front.html">Amaze</a></td>
+  <td class=xl35 align=right>
+	<a href="http://members.aol.com/acinquain/vol_2_no_2/magahiz.html">
+	<span style='font-family:Arial, sans-serif'>Volume 2, No. 2</span></a></td>
+  <td></td>
+ </tr>
+ <tr class=xl33 height=17 style='height:12.75pt'>
+  <td height=17 class=xl32 width=151 style='height:12.75pt;width:113pt'>
+	<a href="http://magahiz.com/frabjous/blog/candles.html">Among the millions</a></td>
+  <td class=xl33><a href="http://members.aol.com/acinquain/front.html">Amaze</a></td>
+  <td class=xl35 align=right>
+	<a href="http://members.aol.com/acinquain/vol_2_no_2/magahiz.html">
+	<span style='font-family:Arial, sans-serif'>Volume 2, No. 2</span></a></td>
+  <td></td>
+ </tr>
+ <tr class=xl33 height=17 style='height:12.75pt'>
+  <td height=17 class=xl32 width=151 style='height:12.75pt;width:113pt'><em>untitled</em></td>
+  <td><a href="http://tinywords.com/">tinywords</a></td>
+  <td class=xl31 align=right><a
+  href="http://tinywords.com/haiku/2004/03/03/">3/3/2004</a></td>
+  <td></td>
+ </tr>
+ <tr class=xl33 height=17 style='height:12.75pt'>
+  <td height=17 class=xl32 width=151 style='height:12.75pt;width:113pt'><em>untitled</em></td>
+  <td><a href="http://tinywords.com/">tinywords</a></td>
+  <td class=xl31 align=right>
+	<a href="http://tinywords.com/haiku/2004/02/27/">2/27/2004</a></td>
+  <td></td>
+ </tr>
+ <tr class=xl33 height=17 style='height:12.75pt'>
+  <td height=17 class=xl32 width=151 style='height:12.75pt;width:113pt'>
+	<a href="http://magahiz.com/frabjous/blog/graytom.html">Big Gray Tom</a></td>
+  <td class=xl33><a href="http://members.aol.com/acinquain/front.html">Amaze</a></td>
+  <td class=xl31 align=right>
+	<a href="http://members.aol.com/acinquain/vol_2_no_1/magahiz.html">Volume 2, No. 1</a></td>
+  <td></td>
+ </tr>
+ <tr class=xl33 height=17 style='height:12.75pt'>
+  <td height=17 class=xl32 width=151 style='height:12.75pt;width:113pt'><em>untitled</em></td>
+  <td><a href="http://tinywords.com/">tinywords</a></td>
+  <td class=xl31 align=right>
+	<a href="http://tinywords.com/haiku/2003/09/30/">9/30/2003</a></td>
+  <td></td>
+ </tr>
+ <tr class=xl33 height=17 style='height:12.75pt'>
+  <td height=17 class=xl32 width=151 style='height:12.75pt;width:113pt'><em>untitled</em></td>
+  <td><a href="http://tinywords.com/">tinywords</a></td>
+  <td class=xl31 align=right>
+	<a href="http://tinywords.com/haiku/2003/04/03/">4/3/2003</a></td>
+  <td></td>
+ </tr>
+ <tr class=xl33 height=17 style='height:12.75pt'>
+  <td height=17 class=xl32 width=151 style='height:12.75pt;width:113pt'><em>untitled</em></td>
+  <td><a href="http://tinywords.com/">tinywords</a></td>
+  <td class=xl31 align=right>
+	<a href="http://tinywords.com/haiku/2003/02/26/">2/26/2003</a></td>
+  <td></td>
+ </tr>
+ <tr class=xl33 height=17 style='height:12.75pt'>
+  <td height=17 class=xl32 width=151 style='height:12.75pt;width:113pt'>
+  <a href="http://magahiz.com/frabjous/b2006/lavieenrose.html">La vie en rose</a></td>
+  <td class=xl33><a href="http://members.aol.com/acinquain/front.html">Amaze</a></td>
+  <td class=xl31 align=right>
+	<a href="http://members.aol.com/acinquain/vol_1_no_2/magahiz.html">Volume 1, No. 2</a></td>
+  <td>Also in print edition.</td>
+ </tr>
+ <tr class=xl33 height=17 style='height:12.75pt'>
+  <td height=17 class=xl32 width=151 style='height:12.75pt;width:113pt'>
+	Here in a Dry Place</td>
+  <td class=xl33><a href="http://members.aol.com/acinquain/front.html">Amaze</a></td>
+  <td class=xl31 align=right>
+	<a href="http://members.aol.com/acinquain/vol_1_no_2/magahiz.html">Volume 1, No. 2</a></td>
+  <td>Also in print edition.</td>
+ </tr>
+ <tr class=xl33 height=17 style='height:12.75pt'>
+  <td height=17 class=xl32 width=151 style='height:12.75pt;width:113pt'>
+	<a href="http://magahiz.com/frabjous/blog/postit.html">Ring of Fire</a></td>
+  <td class=xl33><a href="http://members.aol.com/acinquain/front.html">Amaze</a></td>
+  <td class=xl31 align=right>
+	<a href="http://members.aol.com/acinquain/vol_1_no_2/magahiz.html">Volume 1, No. 2</a></td>
+  <td>Also in print edition.</td>
+ </tr>
+ <tr class=xl33 height=17 style='height:12.75pt'>
+  <td height=17 class=xl32 width=151 style='height:12.75pt;width:113pt'>
+  Lullaby
+</a></td>
+  <td class=xl33><a href="http://members.aol.com/acinquain/front.html">Amaze</a></td>
+  <td class=xl31 align=right>
+	<a href="http://members.aol.com/acinquain/vol_2_no_1/columbia_tribute.html">Volume 1, No. 2</a></td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl25 width=151 style='height:12.75pt;width:113pt'><em>untitled</em></td>
+  <td><a href="http://tinywords.com/">tinywords</a></td>
+  <td class=xl31 align=right>
+	<a href="http://tinywords.com/haiku/2003/01/08/">1/8/2003</a></td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl25 width=151 style='height:12.75pt;width:113pt'><em>untitled</em></td>
+  <td><a href="http://tinywords.com/">tinywords</a></td>
+  <td class=xl31 align=right>
+	<a href="http://tinywords.com/haiku/2002/11/12/">11/12/2002</a></td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl25 width=151 style='height:12.75pt;width:113pt'><em>untitled</em></td>
+  <td><a href="http://tinywords.com/">tinywords</a></td>
+  <td class=xl31 align=right>
+	<a href="http://tinywords.com/haiku/2002/10/08/">10/8/2002</a></td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl25 width=151 style='height:12.75pt;width:113pt'><em>untitled</em></td>
+  <td>iscifistory</td>
+  <td class=xl31 align=right>
+	<a href="http://web.archive.org/web/20061019045114/http://www.iscifistory.com/authorpoemtype.asp?intauthorid=14&intPoemTypeID=10">9/19/2002</a></td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl25 width=151 style='height:12.75pt;width:113pt'>Shaheed</td>
+  <td>iscifistory</td>
+  <td class=xl31 align=right>
+	<a href="http://web.archive.org/web/20061019045114/http://www.iscifistory.com/authorpoemtype.asp?intauthorid=14&intPoemTypeID=10">9/19/2002</a></td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl25 width=151 style='height:12.75pt;width:113pt'><em>untitled</em> (3 verses)</td>
+  <td>iscifistory</td>
+  <td class=xl31 align=right>
+	<a href="http://web.archive.org/web/20061019044950/http://www.iscifistory.com/authorpoemtype.asp?intauthorid=14&intPoemTypeID=1">9/19/2002</a></td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl25 width=151 style='height:12.75pt;width:113pt'>
+	<a href="http://magahiz.com/frabjous/b2006/unicorntaken.html">The unicorn taken by force (mirror) </td>
+  <td>iscifistory</td>
+  <td class=xl31 align=right>
+	<a href="http://web.archive.org/web/20060614171327/http://iscifistory.com/authorpoemtype.asp?intauthorid=14&intPoemTypeID=6">9/19/2002</a></td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl25 width=151 style='height:12.75pt;width:113pt'>
+	<a href="http://magahiz.com/frabjous/blog/x061002_32.html">Narrow hike through the interior</a></td>
+  <td>iscifistory</td>
+  <td class=xl31 align=right>
+	<a href="http://web.archive.org/web/20061019045032/http://www.iscifistory.com/authorpoemtype.asp?intauthorid=14&intPoemTypeID=2">9/15/2002</a></td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl25 width=151 style='height:12.75pt;width:113pt'>At the end of the street</td>
+  <td>iscifistory</td>
+  <td class=xl31 align=right>
+	<a href="http://web.archive.org/web/20061019045032/http://www.iscifistory.com/authorpoemtype.asp?intauthorid=14&intPoemTypeID=2">9/15/2002</a></td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl25 width=151 style='height:12.75pt;width:113pt'>Such a lumper</td>
+  <td>iscifistory</td>
+  <td class=xl31 align=right>
+	<a href="http://web.archive.org/web/20061019045032/http://www.iscifistory.com/authorpoemtype.asp?intauthorid=14&intPoemTypeID=2">9/15/2002</a></td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl25 width=151 style='height:12.75pt;width:113pt'>
+	Asunder</td>
+  <td>iscifistory</td>
+  <td class=xl31 align=right>
+	<a href="http://web.archive.org/web/20061019045032/http://www.iscifistory.com/authorpoemtype.asp?intauthorid=14&intPoemTypeID=2">8/30/2002</a></td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl25 width=151 style='height:12.75pt;width:113pt'>
+	<a href="http://magahiz.com/frabjous/blog/x260802_11.html">Flashing red</a></td>
+  <td>iscifistory</td>
+  <td class=xl31 align=right>
+	<a href="http://web.archive.org/web/20061019045032/http://www.iscifistory.com/authorpoemtype.asp?intauthorid=14&intPoemTypeID=2">8/30/2002</a></td>
+  <td></td>
+ </tr>
+  <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl25 width=151 style='height:12.75pt;width:113pt'><em>untitled</em></td>
+  <td>iscifistory</td>
+  <td class=xl31 align=right>
+	<a href="http://web.archive.org/web/20061019044950/http://www.iscifistory.com/authorpoemtype.asp?intauthorid=14&intPoemTypeID=1">8/22/2002</a></td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl25 width=151 style='height:12.75pt;width:113pt'><em>untitled</em> (2 verses)</td>
+  <td>iscifistory</td>
+  <td class=xl31 align=right>
+	<a href="http://web.archive.org/web/20061019045032/http://www.iscifistory.com/authorpoemtype.asp?intauthorid=14&intPoemTypeID=2">8/22/2002</a></td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl25 width=151 style='height:12.75pt;width:113pt'>
+	College application </td>
+  <td>iscifistory</td>
+  <td class=xl31 align=right>
+	<a href="http://web.archive.org/web/20060614171327/http://iscifistory.com/authorpoemtype.asp?intauthorid=14&intPoemTypeID=6">8/22/2002</a></td>
+  <td></td>
+ </tr> 
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl25 width=151 style='height:12.75pt;width:113pt'>
+	<a href="http://magahiz.com/frabjous/blog/immunity0.html">Immunity</a></td>
+  <td>iscifistory</td>
+  <td class=xl31 align=right>
+	<a href="http://web.archive.org/web/20060614171327/http://iscifistory.com/authorpoemtype.asp?intauthorid=14&intPoemTypeID=6">8/22/2002</a></td>
+  <td></td>
+ </tr> 
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl25 width=151 style='height:12.75pt;width:113pt'>
+	My daughter with the laughing face</td>
+  <td>iscifistory</td>
+  <td class=xl31 align=right>
+	<a href="http://web.archive.org/web/20060614171327/http://iscifistory.com/authorpoemtype.asp?intauthorid=14&intPoemTypeID=6">8/22/2002</a></td>
+  <td></td>
+ </tr> 
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl25 width=151 style='height:12.75pt;width:113pt'>
+	<a href="http://magahiz.com/frabjous/b2006/clearsky.html">The Clear Sky of Lower Manhattan</a></td>
+  <td>iscifistory</td>
+  <td class=xl31 align=right>
+	<a href="http://web.archive.org/web/20060614171327/http://iscifistory.com/authorpoemtype.asp?intauthorid=14&intPoemTypeID=6">8/22/2002</a></td>
+  <td></td>
+ </tr> 
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl25 width=151 style='height:12.75pt;width:113pt'>
+  <!-- <a href="http://magahiz.com/frabjous/blog/c140802_2.html"> -->Proverb<!-- </a> --></td>
+  <td>iscifistory</td>
+  <td class=xl31 align=right>
+	<a href="http://web.archive.org/web/20060614171327/http://iscifistory.com/authorpoemtype.asp?intauthorid=14&intPoemTypeID=6">8/22/2002</a></td>
+  <td></td>
+ </tr> 
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl25 width=151 style='height:12.75pt;width:113pt'><em>untitled</em></td>
+  <td>iscifistory</td>
+  <td class=xl31 align=right>
+	<a href="http://web.archive.org/web/20060614171327/http://iscifistory.com/authorpoemtype.asp?intauthorid=14&intPoemTypeID=6">8/22/2002</a></td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl25 width=151 style='height:12.75pt;width:113pt'><em>untitled</em></td>
+  <td>iscifistory</td>
+  <td class=xl31 align=right>
+	<a href="http://web.archive.org/web/20061019045032/http://www.iscifistory.com/authorpoemtype.asp?intauthorid=14&intPoemTypeID=2">8/21/2002</a></td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl25 width=151 style='height:12.75pt;width:113pt'><em>untitled</em> (2 verses)</td>
+  <td>iscifistory</td>
+  <td class=xl31 align=right>
+	<a href="http://web.archive.org/web/20061019045032/http://www.iscifistory.com/authorpoemtype.asp?intauthorid=14&intPoemTypeID=2">8/21/2002</a></td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl25 width=151 style='height:12.75pt;width:113pt'><em>untitled</em> (6 verses)</td>
+  <td>iscifistory</td>
+  <td class=xl31 align=right>
+	<a href="http://web.archive.org/web/20061019044950/http://www.iscifistory.com/authorpoemtype.asp?intauthorid=14&intPoemTypeID=1">8/21/2002</a></td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl25 width=151 style='height:12.75pt;width:113pt'><em>untitled</em> (3 verses)</td>
+  <td>iscifistory</td>
+  <td class=xl31 align=right>
+	<a href="http://web.archive.org/web/20050120042102/http://iscifistory.com/authorpoemtype.asp?intAuthorID=14&intPoemTypeID=1&start=11">8/21/2002</a></td>
+  <td></td>
+ </tr>
+ <tr height=17 style='height:12.75pt'>
+  <td height=17 class=xl25 width=151 style='height:12.75pt;width:113pt'><em>untitled</em></td>
+  <td>iscifistory</td>
+  <td class=xl31 align=right>
+	<a href="http://web.archive.org/web/20050120042102/http://iscifistory.com/authorpoemtype.asp?intAuthorID=14&intPoemTypeID=1&start=11">6/4/2002</a></td>
+  <td></td>
+ </tr>
+</table> 
+</div>
+<div class="storybody">
+<script type="text/javascript">
+ajaxinclude(rootdomain+"/frabjous/submissions.html")
+</script></div> 
+     <div class="storybody">On completely different topics, the abstract of 
+         my thesis in experimental particle physics is 
+         <a href="http://adsabs.harvard.edu/abs/1985PhDT........59M">online</a>
+	 as well.
+		</div>
+]]></description></item>
+
+</rdf:RDF>
+
